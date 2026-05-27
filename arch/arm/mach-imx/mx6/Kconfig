@@ -396,6 +396,12 @@ config TARGET_MX6SLEVK
 	select SUPPORT_SPL
 	imply OF_UPSTREAM
 
+config TARGET_MX6SL_KINDLE
+	bool "mx6sl_kindle"
+	depends on MX6SL
+	select SUPPORT_SPL
+	imply OF_UPSTREAM
+
 config TARGET_MX6SLLEVK
 	bool "mx6sll evk"
 	depends on MX6SLL
@@ -716,6 +722,7 @@ source "board/nxp/mx6memcal/Kconfig"
 source "board/nxp/mx6sabreauto/Kconfig"
 source "board/nxp/mx6sabresd/Kconfig"
 source "board/nxp/mx6slevk/Kconfig"
+source "board/nxp/mx6sl_kindle/Kconfig"
 source "board/nxp/mx6sllevk/Kconfig"
 source "board/nxp/mx6sxsabresd/Kconfig"
 source "board/nxp/mx6sxsabreauto/Kconfig"

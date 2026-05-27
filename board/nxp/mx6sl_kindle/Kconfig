@@ -1,0 +1,15 @@
+if TARGET_MX6SL_KINDLE
+
+config SYS_BOARD
+	default "mx6sl_kindle"
+
+config SYS_VENDOR
+	default "nxp"
+
+config SYS_CONFIG_NAME
+	default "mx6sl_kindle"
+
+config IMX_CONFIG
+	default "board/nxp/mx6sl_kindle/imximage.cfg"
+
+endif
